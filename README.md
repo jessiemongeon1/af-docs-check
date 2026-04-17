@@ -1,44 +1,18 @@
 # Agent-Friendly Documentation Spec Checker
 
-<img icon.jpeg/>
+<img src="icon.jpeg" alt="Agent-Friendly Docs Checker" />
 
-Checks all Sui docs sites against the Agent Friendly Documentation spec. Compares results against the previous day's results and determines if there is regression in number of tests passing or not. 
+Checks all Sui docs sites against the [Agent-Friendly Documentation spec](https://agentdocsspec.com/spec/). Compares results against the previous day's run and flags any regression in the number of passing tests. Posts results to Slack.
 
-Posts results to Slack.
+**Docs Link Check — 2026-04-16**
 
-Docs Link Check — 2026-04-16
-PASS  Move_Book — https://move-book.com
-Summary
-  17 passed, 1 warnings, 2 failed, 2 skipped (22 total)
-
-Full spec: https://agentdocsspec.com/spec/
-
-PASS  SDKs — https://sdk.mystenlabs.com/
-Summary
-  17 passed, 1 warnings, 2 failed, 2 skipped (22 total)
-
-Full spec: https://agentdocsspec.com/spec/
-
-PASS  Seal — https://seal-docs.wal.app
-Summary
-  18 passed, 2 warnings, 1 failed, 1 skipped (22 total)
-
-Full spec: https://agentdocsspec.com/spec/
-
-PASS  Sui — https://docs.sui.io
-Summary
-  18 passed, 1 warnings, 2 failed, 1 skipped (22 total)
-
-Full spec: https://agentdocsspec.com/spec/
-
-PASS  SuiNS — https://docs.suins.io
-Summary
-  18 passed, 1 failed, 3 skipped (22 total)
-
-Full spec: https://agentdocsspec.com/spec/
-
-PASS  Walrus — https://docs.wal.app
-Summary
-  17 passed, 2 warnings, 2 failed, 1 skipped (22 total)
+| Status | Site | URL | Passed | Warnings | Failed | Skipped | Total |
+|--------|------|-----|-------:|---------:|-------:|--------:|------:|
+| ✅ PASS | Move Book | https://move-book.com | 17 | 1 | 2 | 2 | 22 |
+| ✅ PASS | SDKs | https://sdk.mystenlabs.com/ | 17 | 1 | 2 | 2 | 22 |
+| ✅ PASS | Seal | https://seal-docs.wal.app | 18 | 2 | 1 | 1 | 22 |
+| ✅ PASS | Sui | https://docs.sui.io | 18 | 1 | 2 | 1 | 22 |
+| ✅ PASS | SuiNS | https://docs.suins.io | 18 | 0 | 1 | 3 | 22 |
+| ✅ PASS | Walrus | https://docs.wal.app | 17 | 2 | 2 | 1 | 22 |
 
 Full spec: https://agentdocsspec.com/spec/
