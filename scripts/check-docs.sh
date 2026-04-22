@@ -45,7 +45,7 @@ check_site() {
   local raw_output="$REPORT_DIR/${safe_name}_${TODAY}.txt"
 
   echo "::group::Checking $name ($url)"
-  npx afdocs@0.6.0 check "$url" --max-links=750 2>&1 | tee "$raw_output" || true
+  npx afdocs@latest check "$url" --max-links=750 2>&1 | tee "$raw_output" || true
 
   # Extract a stable, comparable fingerprint: sorted broken links only.
   # Adjust this grep/sed to match afdocs output format.
@@ -82,7 +82,8 @@ cp "$RESULTS_FILE" "$HISTORY_DIR/results_${TODAY}.json"
 # --- Compare against previous and build Slack report ---
 
 build_slack_report() {
-  local header="*Docs Link Check — ${TODAY}*\n"
+  local nl=$'\n'
+  local header="*Docs Link Check — ${TODAY}*${nl}"
   local body=""
   local has_fail=false
 
@@ -107,8 +108,8 @@ build_slack_report() {
       status="🆕 NEW (no previous baseline)"
     fi
 
-    body+="${status}  *${name}* — ${url}\n"
-    body+="\`\`\`${summary}\`\`\`\n"
+    body+="${status}  *${name}* — ${url}${nl}"
+    body+="\`\`\`${summary}\`\`\`${nl}"
   done
 
   local color="#36a64f"
@@ -116,23 +117,20 @@ build_slack_report() {
     color="#e01e5a"
   fi
 
-  echo "${header}${body}"
+  printf '%s' "${header}${body}"
 }
 
 post_to_slack() {
   local message
   message=$(build_slack_report)
-
-    if [[ -z "${SLACK_WEBHOOK:-}" ]]; then
+  if [[ -z "${SLACK_WEBHOOK:-}" ]]; then
     echo "SLACK_WEBHOOK not set, printing report to stdout:"
-    echo -e "$message"
+    printf '%s\n' "$message"
     return
   fi
-
   curl -sf -X POST "$SLACK_WEBHOOK" \
     -H "Content-Type: application/json" \
     -d "$(jq -n --arg text "$message" '{text: $text}')"
-
   echo "Report posted to Slack."
 }
 
