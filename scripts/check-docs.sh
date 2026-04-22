@@ -45,7 +45,7 @@ check_site() {
   local raw_output="$REPORT_DIR/${safe_name}_${TODAY}.txt"
 
   echo "::group::Checking $name ($url)"
-  npx afdocs@0.6.0 check "$url" --max-links=750 > "$raw_output" 2>&1 || true
+  npx afdocs@0.6.0 check "$url" --max-links=750 2>&1 | tee "$raw_output" || true
 
   # Extract a stable, comparable fingerprint: sorted broken links only.
   # Adjust this grep/sed to match afdocs output format.
