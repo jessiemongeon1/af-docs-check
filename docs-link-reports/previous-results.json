@@ -6,7 +6,7 @@
   },
   "Walrus": {
     "hash": "c2099ba534ed5c4c5cc48f1d0da757af3f3adc8d0b30e632d66562786da28ad9",
-    "summary": "Summary\n  15 passed, 2 warnings, 5 failed, 1 skipped (23 total)\n\nFull spec: https://agentdocsspec.com/spec/",
+    "summary": "Summary\n  16 passed, 2 warnings, 4 failed, 1 skipped (23 total)\n\nFull spec: https://agentdocsspec.com/spec/",
     "url": "https://docs.wal.app"
   },
   "SuiNS": {
