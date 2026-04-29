@@ -1,6 +1,7 @@
 {
   "Sui": {
     "url": "https://docs.sui.io",
+<<<<<<< HEAD
     "score": 100,
     "grade": "A+",
     "passed": 19,
@@ -22,11 +23,34 @@
       {
         "name": "markdown-content-parity",
         "reason": "Expected due to custom import content module"
+=======
+    "passed": 18,
+    "failed": 3,
+    "warnings": 1,
+    "skipped": 1,
+    "total": 23,
+    "failures": [
+      {
+        "name": "llms-txt-directive-md",
+        "category": "content-discoverability",
+        "message": "No llms.txt directive found in markdown of any of 644 pages; 3 had no markdown version"
+      },
+      {
+        "name": "content-start-position",
+        "category": "page-size",
+        "message": "6 of 647 pages have content starting past 50% (worst 97%)"
+      },
+      {
+        "name": "markdown-content-parity",
+        "category": "observability",
+        "message": "149 of 644 pages have substantive content differences between markdown and HTML (avg 12% missing)"
+>>>>>>> 3ec4e8d46464ab71fb192967b276e26d5ba2877a
       }
     ]
   },
   "Walrus": {
     "url": "https://docs.wal.app",
+<<<<<<< HEAD
     "score": 98,
     "grade": "A",
     "passed": 18,
@@ -52,11 +76,34 @@
       {
         "name": "content-negotiation",
         "reason": "Markdown content negotiation not supported"
+=======
+    "passed": 19,
+    "failed": 3,
+    "warnings": 0,
+    "skipped": 1,
+    "total": 23,
+    "failures": [
+      {
+        "name": "content-negotiation",
+        "category": "markdown-availability",
+        "message": "Server ignores Accept: text/markdown header (0/91 pages return markdown)"
+      },
+      {
+        "name": "content-start-position",
+        "category": "page-size",
+        "message": "1 of 91 pages have content starting past 50% (worst 57%)"
+      },
+      {
+        "name": "markdown-content-parity",
+        "category": "observability",
+        "message": "7 of 86 pages have substantive content differences between markdown and HTML (avg 6% missing)"
+>>>>>>> 3ec4e8d46464ab71fb192967b276e26d5ba2877a
       }
     ]
   },
   "SuiNS": {
     "url": "https://docs.suins.io",
+<<<<<<< HEAD
     "score": 95,
     "grade": "A",
     "passed": 16,
@@ -115,6 +162,8 @@
     "url": "https://move-book.com",
     "score": 93,
     "grade": "A",
+=======
+>>>>>>> 3ec4e8d46464ab71fb192967b276e26d5ba2877a
     "passed": 16,
     "failed": 2,
     "warnings": 3,
@@ -123,10 +172,60 @@
     "failures": [
       {
         "name": "content-negotiation",
+<<<<<<< HEAD
+=======
+        "category": "markdown-availability",
+        "message": "Server ignores Accept: text/markdown header (0/16 pages return markdown)"
+      },
+      {
+        "name": "markdown-content-parity",
+        "category": "observability",
+        "message": "5 of 16 pages have substantive content differences between markdown and HTML (avg 12% missing)"
+      }
+    ]
+  },
+  "Seal": {
+    "url": "https://seal-docs.wal.app",
+    "passed": 17,
+    "failed": 3,
+    "warnings": 2,
+    "skipped": 1,
+    "total": 23,
+    "failures": [
+      {
+        "name": "content-negotiation",
+        "category": "markdown-availability",
+        "message": "Server ignores Accept: text/markdown header (0/13 pages return markdown)"
+      },
+      {
+        "name": "markdown-content-parity",
+        "category": "observability",
+        "message": "3 of 13 pages have substantive content differences between markdown and HTML (avg 8% missing)"
+      },
+      {
+        "name": "cache-header-hygiene",
+        "category": "observability",
+        "message": "1 of 14 endpoints have aggressive caching or missing cache headers"
+      }
+    ]
+  },
+  "Move_Book": {
+    "url": "https://move-book.com",
+    "passed": 16,
+    "failed": 3,
+    "warnings": 3,
+    "skipped": 1,
+    "total": 23,
+    "failures": [
+      {
+        "name": "content-negotiation",
+        "category": "markdown-availability",
+>>>>>>> 3ec4e8d46464ab71fb192967b276e26d5ba2877a
         "message": "Server ignores Accept: text/markdown header (0/150 pages return markdown)"
       },
       {
         "name": "content-start-position",
+<<<<<<< HEAD
         "message": "81 of 151 pages have content starting past 50% (worst 100%)"
       }
     ],
@@ -138,25 +237,46 @@
       {
         "name": "markdown-content-parity",
         "reason": "Expected due to custom import content module"
+=======
+        "category": "page-size",
+        "message": "81 of 151 pages have content starting past 50% (worst 100%)"
+      },
+      {
+        "name": "markdown-content-parity",
+        "category": "observability",
+        "message": "20 of 133 pages have substantive content differences between markdown and HTML (avg 10% missing); 1 failed to fetch"
+>>>>>>> 3ec4e8d46464ab71fb192967b276e26d5ba2877a
       }
     ]
   },
   "SDKs": {
     "url": "https://sdk.mystenlabs.com/",
+<<<<<<< HEAD
     "score": 95,
     "grade": "A",
     "passed": 18,
     "failed": 2,
     "warnings": 0,
     "skipped": 3,
+=======
+    "passed": 18,
+    "failed": 2,
+    "warnings": 1,
+    "skipped": 2,
+>>>>>>> 3ec4e8d46464ab71fb192967b276e26d5ba2877a
     "total": 23,
     "failures": [
       {
         "name": "content-negotiation",
+<<<<<<< HEAD
+=======
+        "category": "markdown-availability",
+>>>>>>> 3ec4e8d46464ab71fb192967b276e26d5ba2877a
         "message": "Server ignores Accept: text/markdown header (0/82 pages return markdown)"
       },
       {
         "name": "content-start-position",
+<<<<<<< HEAD
         "message": "3 of 85 pages have content starting past 50% (worst 66%)"
       }
     ],
@@ -169,6 +289,11 @@
         "name": "markdown-content-parity",
         "reason": "Expected due to custom import content module"
       }
+=======
+        "category": "page-size",
+        "message": "3 of 85 pages have content starting past 50% (worst 66%)"
+      }
+>>>>>>> 3ec4e8d46464ab71fb192967b276e26d5ba2877a
     ]
   }
 }
