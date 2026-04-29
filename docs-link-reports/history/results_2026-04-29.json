@@ -1,32 +1,174 @@
 {
   "Sui": {
-    "hash": "c2099ba534ed5c4c5cc48f1d0da757af3f3adc8d0b30e632d66562786da28ad9",
-    "summary": "Summary\n  18 passed, 1 warnings, 3 failed, 1 skipped (23 total)\n\nFull spec: https://agentdocsspec.com/spec/",
-    "url": "https://docs.sui.io"
+    "url": "https://docs.sui.io",
+    "score": 100,
+    "grade": "A+",
+    "passed": 19,
+    "failed": 1,
+    "warnings": 1,
+    "skipped": 2,
+    "total": 23,
+    "failures": [
+      {
+        "name": "content-start-position",
+        "message": "1 of 647 pages have content starting past 50% (worst 91%)"
+      }
+    ],
+    "skipped_checks": [
+      {
+        "name": "auth-alternative-access",
+        "reason": "Docs do not require authentication"
+      },
+      {
+        "name": "markdown-content-parity",
+        "reason": "Expected due to custom import content module"
+      }
+    ]
   },
   "Walrus": {
-    "hash": "c2099ba534ed5c4c5cc48f1d0da757af3f3adc8d0b30e632d66562786da28ad9",
-    "summary": "Summary\n  18 passed, 4 failed, 1 skipped (23 total)\n\nFull spec: https://agentdocsspec.com/spec/",
-    "url": "https://docs.wal.app"
+    "url": "https://docs.wal.app",
+    "score": 98,
+    "grade": "A",
+    "passed": 18,
+    "failed": 1,
+    "warnings": 1,
+    "skipped": 3,
+    "total": 23,
+    "failures": [
+      {
+        "name": "cache-header-hygiene",
+        "message": "1 of 92 endpoints have aggressive caching or missing cache headers"
+      }
+    ],
+    "skipped_checks": [
+      {
+        "name": "auth-alternative-access",
+        "reason": "Docs do not require authentication"
+      },
+      {
+        "name": "markdown-content-parity",
+        "reason": "Expected due to custom import content module"
+      },
+      {
+        "name": "content-negotiation",
+        "reason": "Markdown content negotiation not supported"
+      }
+    ]
   },
   "SuiNS": {
-    "hash": "c2099ba534ed5c4c5cc48f1d0da757af3f3adc8d0b30e632d66562786da28ad9",
-    "summary": "Summary\n  16 passed, 3 warnings, 2 failed, 2 skipped (23 total)\n\nFull spec: https://agentdocsspec.com/spec/",
-    "url": "https://docs.suins.io"
+    "url": "https://docs.suins.io",
+    "score": 95,
+    "grade": "A",
+    "passed": 16,
+    "failed": 1,
+    "warnings": 3,
+    "skipped": 3,
+    "total": 23,
+    "failures": [
+      {
+        "name": "content-negotiation",
+        "message": "Server ignores Accept: text/markdown header (0/16 pages return markdown)"
+      }
+    ],
+    "skipped_checks": [
+      {
+        "name": "auth-alternative-access",
+        "reason": "Docs do not require authentication"
+      },
+      {
+        "name": "markdown-content-parity",
+        "reason": "Expected due to custom import content module"
+      }
+    ]
   },
   "Seal": {
-    "hash": "c2099ba534ed5c4c5cc48f1d0da757af3f3adc8d0b30e632d66562786da28ad9",
-    "summary": "Summary\n  17 passed, 2 warnings, 3 failed, 1 skipped (23 total)\n\nFull spec: https://agentdocsspec.com/spec/",
-    "url": "https://seal-docs.wal.app"
+    "url": "https://seal-docs.wal.app",
+    "score": 99,
+    "grade": "A",
+    "passed": 17,
+    "failed": 1,
+    "warnings": 2,
+    "skipped": 3,
+    "total": 23,
+    "failures": [
+      {
+        "name": "cache-header-hygiene",
+        "message": "1 of 14 endpoints have aggressive caching or missing cache headers"
+      }
+    ],
+    "skipped_checks": [
+      {
+        "name": "auth-alternative-access",
+        "reason": "Docs do not require authentication"
+      },
+      {
+        "name": "markdown-content-parity",
+        "reason": "Expected due to custom import content module"
+      },
+      {
+        "name": "content-negotiation",
+        "reason": "Markdown content negotiation not supported"
+      }
+    ]
   },
   "Move_Book": {
-    "hash": "c2099ba534ed5c4c5cc48f1d0da757af3f3adc8d0b30e632d66562786da28ad9",
-    "summary": "Summary\n  16 passed, 3 warnings, 3 failed, 1 skipped (23 total)\n\nFull spec: https://agentdocsspec.com/spec/",
-    "url": "https://move-book.com"
+    "url": "https://move-book.com",
+    "score": 93,
+    "grade": "A",
+    "passed": 16,
+    "failed": 2,
+    "warnings": 3,
+    "skipped": 2,
+    "total": 23,
+    "failures": [
+      {
+        "name": "content-negotiation",
+        "message": "Server ignores Accept: text/markdown header (0/150 pages return markdown)"
+      },
+      {
+        "name": "content-start-position",
+        "message": "81 of 151 pages have content starting past 50% (worst 100%)"
+      }
+    ],
+    "skipped_checks": [
+      {
+        "name": "auth-alternative-access",
+        "reason": "Docs do not require authentication"
+      },
+      {
+        "name": "markdown-content-parity",
+        "reason": "Expected due to custom import content module"
+      }
+    ]
   },
   "SDKs": {
-    "hash": "c2099ba534ed5c4c5cc48f1d0da757af3f3adc8d0b30e632d66562786da28ad9",
-    "summary": "Summary\n  18 passed, 1 warnings, 2 failed, 2 skipped (23 total)\n\nFull spec: https://agentdocsspec.com/spec/",
-    "url": "https://sdk.mystenlabs.com/"
+    "url": "https://sdk.mystenlabs.com/",
+    "score": 95,
+    "grade": "A",
+    "passed": 18,
+    "failed": 2,
+    "warnings": 0,
+    "skipped": 3,
+    "total": 23,
+    "failures": [
+      {
+        "name": "content-negotiation",
+        "message": "Server ignores Accept: text/markdown header (0/82 pages return markdown)"
+      },
+      {
+        "name": "content-start-position",
+        "message": "3 of 85 pages have content starting past 50% (worst 66%)"
+      }
+    ],
+    "skipped_checks": [
+      {
+        "name": "auth-alternative-access",
+        "reason": "Docs do not require authentication"
+      },
+      {
+        "name": "markdown-content-parity",
+        "reason": "Expected due to custom import content module"
+      }
+    ]
   }
 }
