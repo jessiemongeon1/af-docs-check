@@ -36,7 +36,7 @@ SITE_URLS=(
 
 # --- Skip configuration ---
 # Checks skipped for all sites
-GLOBAL_SKIP_CHECKS="auth-alternative-access,markdown-content-parity"
+GLOBAL_SKIP_CHECKS="auth-alternative-access,markdown-content-parity,content-start-position"
 
 # Additional check skipped only for Walrus and Seal
 WALRUS_SEAL_EXTRA_SKIP="content-negotiation"
@@ -46,6 +46,7 @@ skip_reason_for() {
   case "$1" in
     auth-alternative-access) echo "Docs do not require authentication" ;;
     markdown-content-parity) echo "Expected due to custom import content module" ;;
+    content-start-position)  echo "Some pages are purely imported content or auto-generated components, content starting further on page is expected for them" ;;
     content-negotiation)     echo "Markdown content negotiation not supported" ;;
     *)                       echo "Excluded from scoring" ;;
   esac
