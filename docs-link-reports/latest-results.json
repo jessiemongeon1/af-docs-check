@@ -29,17 +29,12 @@
     "url": "https://docs.wal.app",
     "score": 98,
     "grade": "A",
-    "passed": 18,
-    "failed": 1,
+    "passed": 19,
+    "failed": 0,
     "warnings": 1,
     "skipped": 3,
     "total": 23,
-    "failures": [
-      {
-        "name": "cache-header-hygiene",
-        "message": "4 of 92 endpoints have aggressive caching or missing cache headers"
-      }
-    ],
+    "failures": [],
     "skipped_checks": [
       {
         "name": "auth-alternative-access",
@@ -110,9 +105,9 @@
     "url": "https://move-book.com",
     "score": 93,
     "grade": "A",
-    "passed": 15,
+    "passed": 16,
     "failed": 2,
-    "warnings": 4,
+    "warnings": 3,
     "skipped": 2,
     "total": 23,
     "failures": [
