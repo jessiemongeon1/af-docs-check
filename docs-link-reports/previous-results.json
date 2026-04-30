@@ -1,146 +1,169 @@
-<<<<<<< HEAD
-{}
-=======
 {
-  "Move_Book": {
-    "url": "https://move-book.com",
-    "passed": 16,
-    "failed": 3,
-    "warnings": 3,
-    "skipped": 1,
-    "total": 23,
-    "failures": [
-      {
-        "name": "content-negotiation",
-        "category": "markdown-availability",
-        "message": "Server ignores Accept: text/markdown header (0/150 pages return markdown)"
-      },
-      {
-        "name": "content-start-position",
-        "category": "page-size",
-        "message": "81 of 151 pages have content starting past 50% (worst 100%)"
-      },
-      {
-        "name": "markdown-content-parity",
-        "category": "observability",
-        "message": "20 of 133 pages have substantive content differences between markdown and HTML (avg 10% missing); 1 failed to fetch"
-      }
-    ]
-  },
-  "SDKs": {
-    "url": "https://sdk.mystenlabs.com/",
-    "passed": 18,
-    "failed": 2,
-    "warnings": 1,
-    "skipped": 2,
-    "total": 23,
-    "failures": [
-      {
-        "name": "content-negotiation",
-        "category": "markdown-availability",
-        "message": "Server ignores Accept: text/markdown header (0/82 pages return markdown)"
-      },
-      {
-        "name": "content-start-position",
-        "category": "page-size",
-        "message": "3 of 85 pages have content starting past 50% (worst 66%)"
-      }
-    ]
-  },
-  "Seal": {
-    "url": "https://seal-docs.wal.app",
-    "passed": 18,
-    "failed": 2,
-    "warnings": 2,
-    "skipped": 1,
-    "total": 23,
-    "failures": [
-      {
-        "name": "content-negotiation",
-        "category": "markdown-availability",
-        "message": "Server ignores Accept: text/markdown header (0/13 pages return markdown)"
-      },
-      {
-        "name": "markdown-content-parity",
-        "category": "observability",
-        "message": "3 of 12 pages have substantive content differences between markdown and HTML (avg 9% missing); 1 failed to fetch"
-      }
-    ]
-  },
   "Sui": {
     "url": "https://docs.sui.io",
-    "passed": 18,
-    "failed": 3,
+    "score": 100,
+    "grade": "A+",
+    "passed": 19,
+    "failed": 1,
     "warnings": 1,
-    "skipped": 1,
-    "total": 23,
-    "failures": [
-      {
-        "name": "llms-txt-directive-md",
-        "category": "content-discoverability",
-        "message": "No llms.txt directive found in markdown of any of 644 pages; 3 had no markdown version"
-      },
-      {
-        "name": "content-start-position",
-        "category": "page-size",
-        "message": "6 of 647 pages have content starting past 50% (worst 97%)"
-      },
-      {
-        "name": "markdown-content-parity",
-        "category": "observability",
-        "message": "149 of 644 pages have substantive content differences between markdown and HTML (avg 12% missing)"
-      }
-    ]
-  },
-  "SuiNS": {
-    "url": "https://docs.suins.io",
-    "passed": 16,
-    "failed": 2,
-    "warnings": 3,
     "skipped": 2,
     "total": 23,
     "failures": [
       {
-        "name": "content-negotiation",
-        "category": "markdown-availability",
-        "message": "Server ignores Accept: text/markdown header (0/16 pages return markdown)"
+        "name": "content-start-position",
+        "message": "1 of 647 pages have content starting past 50% (worst 91%)"
+      }
+    ],
+    "skipped_checks": [
+      {
+        "name": "auth-alternative-access",
+        "reason": "Docs do not require authentication"
       },
       {
         "name": "markdown-content-parity",
-        "category": "observability",
-        "message": "5 of 16 pages have substantive content differences between markdown and HTML (avg 12% missing)"
+        "reason": "Expected due to custom import content module"
       }
     ]
   },
   "Walrus": {
     "url": "https://docs.wal.app",
+    "score": 98,
+    "grade": "A",
     "passed": 18,
-    "failed": 4,
-    "warnings": 0,
-    "skipped": 1,
+    "failed": 1,
+    "warnings": 1,
+    "skipped": 3,
+    "total": 23,
+    "failures": [
+      {
+        "name": "cache-header-hygiene",
+        "message": "4 of 92 endpoints have aggressive caching or missing cache headers"
+      }
+    ],
+    "skipped_checks": [
+      {
+        "name": "auth-alternative-access",
+        "reason": "Docs do not require authentication"
+      },
+      {
+        "name": "markdown-content-parity",
+        "reason": "Expected due to custom import content module"
+      },
+      {
+        "name": "content-negotiation",
+        "reason": "Markdown content negotiation not supported"
+      }
+    ]
+  },
+  "SuiNS": {
+    "url": "https://docs.suins.io",
+    "score": 95,
+    "grade": "A",
+    "passed": 16,
+    "failed": 1,
+    "warnings": 3,
+    "skipped": 3,
     "total": 23,
     "failures": [
       {
         "name": "content-negotiation",
-        "category": "markdown-availability",
-        "message": "Server ignores Accept: text/markdown header (0/91 pages return markdown)"
-      },
+        "message": "Server ignores Accept: text/markdown header (0/16 pages return markdown)"
+      }
+    ],
+    "skipped_checks": [
       {
-        "name": "content-start-position",
-        "category": "page-size",
-        "message": "1 of 91 pages have content starting past 50% (worst 57%)"
+        "name": "auth-alternative-access",
+        "reason": "Docs do not require authentication"
       },
       {
         "name": "markdown-content-parity",
-        "category": "observability",
-        "message": "7 of 86 pages have substantive content differences between markdown and HTML (avg 6% missing)"
+        "reason": "Expected due to custom import content module"
+      }
+    ]
+  },
+  "Seal": {
+    "url": "https://seal-docs.wal.app",
+    "score": 99,
+    "grade": "A",
+    "passed": 18,
+    "failed": 0,
+    "warnings": 2,
+    "skipped": 3,
+    "total": 23,
+    "failures": [],
+    "skipped_checks": [
+      {
+        "name": "auth-alternative-access",
+        "reason": "Docs do not require authentication"
       },
       {
-        "name": "cache-header-hygiene",
-        "category": "observability",
-        "message": "1 of 92 endpoints have aggressive caching or missing cache headers"
+        "name": "markdown-content-parity",
+        "reason": "Expected due to custom import content module"
+      },
+      {
+        "name": "content-negotiation",
+        "reason": "Markdown content negotiation not supported"
+      }
+    ]
+  },
+  "Move_Book": {
+    "url": "https://move-book.com",
+    "score": 93,
+    "grade": "A",
+    "passed": 15,
+    "failed": 2,
+    "warnings": 4,
+    "skipped": 2,
+    "total": 23,
+    "failures": [
+      {
+        "name": "content-negotiation",
+        "message": "Server ignores Accept: text/markdown header (0/150 pages return markdown)"
+      },
+      {
+        "name": "content-start-position",
+        "message": "81 of 151 pages have content starting past 50% (worst 100%)"
+      }
+    ],
+    "skipped_checks": [
+      {
+        "name": "auth-alternative-access",
+        "reason": "Docs do not require authentication"
+      },
+      {
+        "name": "markdown-content-parity",
+        "reason": "Expected due to custom import content module"
+      }
+    ]
+  },
+  "SDKs": {
+    "url": "https://sdk.mystenlabs.com/",
+    "score": 95,
+    "grade": "A",
+    "passed": 18,
+    "failed": 2,
+    "warnings": 0,
+    "skipped": 3,
+    "total": 23,
+    "failures": [
+      {
+        "name": "content-negotiation",
+        "message": "Server ignores Accept: text/markdown header (0/82 pages return markdown)"
+      },
+      {
+        "name": "content-start-position",
+        "message": "3 of 85 pages have content starting past 50% (worst 66%)"
+      }
+    ],
+    "skipped_checks": [
+      {
+        "name": "auth-alternative-access",
+        "reason": "Docs do not require authentication"
+      },
+      {
+        "name": "markdown-content-parity",
+        "reason": "Expected due to custom import content module"
       }
     ]
   }
 }
->>>>>>> 3ec4e8d46464ab71fb192967b276e26d5ba2877a
