@@ -4,32 +4,6 @@
     "score": 100,
     "grade": "A+",
     "passed": 19,
-    "failed": 1,
-    "warnings": 1,
-    "skipped": 2,
-    "total": 23,
-    "failures": [
-      {
-        "name": "content-start-position",
-        "message": "1 of 647 pages have content starting past 50% (worst 91%)"
-      }
-    ],
-    "skipped_checks": [
-      {
-        "name": "auth-alternative-access",
-        "reason": "Docs do not require authentication"
-      },
-      {
-        "name": "markdown-content-parity",
-        "reason": "Expected due to custom import content module"
-      }
-    ]
-  },
-  "Walrus": {
-    "url": "https://docs.wal.app",
-    "score": 98,
-    "grade": "A",
-    "passed": 19,
     "failed": 0,
     "warnings": 1,
     "skipped": 3,
@@ -45,6 +19,40 @@
         "reason": "Expected due to custom import content module"
       },
       {
+        "name": "content-start-position",
+        "reason": "Some pages are purely imported content or auto-generated components, content starting further on page is expected for them"
+      }
+    ]
+  },
+  "Walrus": {
+    "url": "https://docs.wal.app",
+    "score": 99,
+    "grade": "A",
+    "passed": 18,
+    "failed": 1,
+    "warnings": 0,
+    "skipped": 4,
+    "total": 23,
+    "failures": [
+      {
+        "name": "cache-header-hygiene",
+        "message": "6 of 92 endpoints have aggressive caching or missing cache headers"
+      }
+    ],
+    "skipped_checks": [
+      {
+        "name": "auth-alternative-access",
+        "reason": "Docs do not require authentication"
+      },
+      {
+        "name": "markdown-content-parity",
+        "reason": "Expected due to custom import content module"
+      },
+      {
+        "name": "content-start-position",
+        "reason": "Some pages are purely imported content or auto-generated components, content starting further on page is expected for them"
+      },
+      {
         "name": "content-negotiation",
         "reason": "Markdown content negotiation not supported"
       }
@@ -52,12 +60,12 @@
   },
   "SuiNS": {
     "url": "https://docs.suins.io",
-    "score": 95,
+    "score": 96,
     "grade": "A",
     "passed": 16,
     "failed": 1,
-    "warnings": 3,
-    "skipped": 3,
+    "warnings": 2,
+    "skipped": 4,
     "total": 23,
     "failures": [
       {
@@ -73,17 +81,21 @@
       {
         "name": "markdown-content-parity",
         "reason": "Expected due to custom import content module"
+      },
+      {
+        "name": "content-start-position",
+        "reason": "Some pages are purely imported content or auto-generated components, content starting further on page is expected for them"
       }
     ]
   },
   "Seal": {
     "url": "https://seal-docs.wal.app",
-    "score": 99,
-    "grade": "A",
+    "score": 100,
+    "grade": "A+",
     "passed": 18,
     "failed": 0,
-    "warnings": 2,
-    "skipped": 3,
+    "warnings": 1,
+    "skipped": 4,
     "total": 23,
     "failures": [],
     "skipped_checks": [
@@ -96,6 +108,10 @@
         "reason": "Expected due to custom import content module"
       },
       {
+        "name": "content-start-position",
+        "reason": "Some pages are purely imported content or auto-generated components, content starting further on page is expected for them"
+      },
+      {
         "name": "content-negotiation",
         "reason": "Markdown content negotiation not supported"
       }
@@ -103,12 +119,12 @@
   },
   "Move_Book": {
     "url": "https://move-book.com",
-    "score": 93,
+    "score": 96,
     "grade": "A",
-    "passed": 16,
+    "passed": 15,
     "failed": 2,
     "warnings": 3,
-    "skipped": 2,
+    "skipped": 3,
     "total": 23,
     "failures": [
       {
@@ -116,8 +132,8 @@
         "message": "Server ignores Accept: text/markdown header (0/150 pages return markdown)"
       },
       {
-        "name": "content-start-position",
-        "message": "81 of 151 pages have content starting past 50% (worst 100%)"
+        "name": "markdown-code-fence-validity",
+        "message": "1 unclosed code fences found across 135 pages"
       }
     ],
     "skipped_checks": [
@@ -128,26 +144,26 @@
       {
         "name": "markdown-content-parity",
         "reason": "Expected due to custom import content module"
+      },
+      {
+        "name": "content-start-position",
+        "reason": "Some pages are purely imported content or auto-generated components, content starting further on page is expected for them"
       }
     ]
   },
   "SDKs": {
     "url": "https://sdk.mystenlabs.com/",
-    "score": 95,
+    "score": 99,
     "grade": "A",
-    "passed": 18,
-    "failed": 2,
+    "passed": 19,
+    "failed": 1,
     "warnings": 0,
     "skipped": 3,
     "total": 23,
     "failures": [
       {
-        "name": "content-negotiation",
-        "message": "Server ignores Accept: text/markdown header (0/82 pages return markdown)"
-      },
-      {
-        "name": "content-start-position",
-        "message": "3 of 85 pages have content starting past 50% (worst 66%)"
+        "name": "llms-txt-coverage",
+        "message": "llms.txt covers 82/112 sitemap doc pages (73%); 30 missing; 3 llms.txt links not in sitemap (may indicate stale links or incomplete sitemap)"
       }
     ],
     "skipped_checks": [
@@ -158,6 +174,10 @@
       {
         "name": "markdown-content-parity",
         "reason": "Expected due to custom import content module"
+      },
+      {
+        "name": "content-start-position",
+        "reason": "Some pages are purely imported content or auto-generated components, content starting further on page is expected for them"
       }
     ]
   }
