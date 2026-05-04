@@ -26,19 +26,14 @@
   },
   "Walrus": {
     "url": "https://docs.wal.app",
-    "score": 99,
-    "grade": "A",
-    "passed": 17,
-    "failed": 1,
-    "warnings": 1,
+    "score": 100,
+    "grade": "A+",
+    "passed": 19,
+    "failed": 0,
+    "warnings": 0,
     "skipped": 4,
     "total": 23,
-    "failures": [
-      {
-        "name": "cache-header-hygiene",
-        "message": "3 of 92 endpoints have aggressive caching or missing cache headers"
-      }
-    ],
+    "failures": [],
     "skipped_checks": [
       {
         "name": "auth-alternative-access",
@@ -90,14 +85,19 @@
   },
   "Seal": {
     "url": "https://seal-docs.wal.app",
-    "score": 99,
-    "grade": "A",
+    "score": 100,
+    "grade": "A+",
     "passed": 17,
-    "failed": 0,
-    "warnings": 2,
+    "failed": 1,
+    "warnings": 1,
     "skipped": 4,
     "total": 23,
-    "failures": [],
+    "failures": [
+      {
+        "name": "cache-header-hygiene",
+        "message": "1 of 14 endpoints have aggressive caching or missing cache headers"
+      }
+    ],
     "skipped_checks": [
       {
         "name": "auth-alternative-access",
