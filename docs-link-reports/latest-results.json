@@ -65,7 +65,7 @@
     "failures": [
       {
         "name": "content-negotiation",
-        "message": "Server ignores Accept: text/markdown header (0/17 pages return markdown)"
+        "message": "Server ignores Accept: text/markdown header (0/18 pages return markdown)"
       }
     ],
     "skipped_checks": [
@@ -85,11 +85,11 @@
   },
   "Seal": {
     "url": "https://seal-docs.wal.app",
-    "score": 99,
-    "grade": "A",
-    "passed": 17,
+    "score": 100,
+    "grade": "A+",
+    "passed": 18,
     "failed": 0,
-    "warnings": 2,
+    "warnings": 1,
     "skipped": 4,
     "total": 23,
     "failures": [],
@@ -116,8 +116,8 @@
     "url": "https://move-book.com",
     "score": 96,
     "grade": "A",
-    "passed": 15,
-    "failed": 2,
+    "passed": 16,
+    "failed": 1,
     "warnings": 3,
     "skipped": 3,
     "total": 23,
@@ -125,10 +125,6 @@
       {
         "name": "content-negotiation",
         "message": "Server ignores Accept: text/markdown header (0/150 pages return markdown)"
-      },
-      {
-        "name": "markdown-code-fence-validity",
-        "message": "1 unclosed code fences found across 135 pages"
       }
     ],
     "skipped_checks": [

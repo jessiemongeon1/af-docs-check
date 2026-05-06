@@ -26,19 +26,14 @@
   },
   "Walrus": {
     "url": "https://docs.wal.app",
-    "score": 99,
-    "grade": "A",
-    "passed": 18,
-    "failed": 1,
+    "score": 100,
+    "grade": "A+",
+    "passed": 19,
+    "failed": 0,
     "warnings": 0,
     "skipped": 4,
     "total": 23,
-    "failures": [
-      {
-        "name": "cache-header-hygiene",
-        "message": "1 of 92 endpoints have aggressive caching or missing cache headers"
-      }
-    ],
+    "failures": [],
     "skipped_checks": [
       {
         "name": "auth-alternative-access",
@@ -62,15 +57,15 @@
     "url": "https://docs.suins.io",
     "score": 96,
     "grade": "A",
-    "passed": 16,
+    "passed": 17,
     "failed": 1,
-    "warnings": 2,
+    "warnings": 1,
     "skipped": 4,
     "total": 23,
     "failures": [
       {
         "name": "content-negotiation",
-        "message": "Server ignores Accept: text/markdown header (0/16 pages return markdown)"
+        "message": "Server ignores Accept: text/markdown header (0/17 pages return markdown)"
       }
     ],
     "skipped_checks": [
@@ -90,11 +85,11 @@
   },
   "Seal": {
     "url": "https://seal-docs.wal.app",
-    "score": 100,
-    "grade": "A+",
-    "passed": 18,
+    "score": 99,
+    "grade": "A",
+    "passed": 17,
     "failed": 0,
-    "warnings": 1,
+    "warnings": 2,
     "skipped": 4,
     "total": 23,
     "failures": [],
